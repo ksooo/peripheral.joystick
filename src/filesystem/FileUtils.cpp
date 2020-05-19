@@ -30,7 +30,7 @@ bool CFileUtils::Exists(const std::string& url)
   return false;
 }
 
-bool CFileUtils::Stat(const std::string& url, kodi::vfs::FileStatus& buffer)
+bool CFileUtils::Stat(const std::string& url, STAT_STRUCTURE& buffer)
 {
   // Create file utils
   FileUtilsPtr fileUtils = CreateFileUtils(url);
